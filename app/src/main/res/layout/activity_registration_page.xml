@@ -12,7 +12,7 @@
       android:id="@+id/registerlabel"
       android:layout_width="165dp"
       android:layout_height="35dp"
-      android:layout_marginTop="45dp"
+      android:layout_marginTop="25dp"
       android:layout_marginBottom="8dp"
       android:text="REGISTER"
       android:textColor="#151414"
@@ -20,20 +20,20 @@
       android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/tableLayout"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.414"
+      app:layout_constraintHorizontal_bias="0.56"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
 
   <TableLayout
       android:id="@+id/tableLayout"
-      android:layout_width="396dp"
-      android:layout_height="451dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
 
-      android:layout_marginTop="24dp"
+      android:layout_marginTop="16dp"
       android:layout_marginBottom="87dp"
       app:layout_constraintBottom_toTopOf="@+id/submit_button"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.466"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/registerlabel">
 
@@ -46,7 +46,7 @@
 
       <TextView
           android:id="@+id/namelabel"
-          android:layout_width="82dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginLeft="10dp"
           android:text="Name   :"
@@ -78,8 +78,8 @@
           android:id="@+id/placelabel"
           android:layout_width="80dp"
           android:layout_height="wrap_content"
-          android:foregroundGravity="right"
           android:layout_marginLeft="10dp"
+          android:foregroundGravity="right"
           android:text="Place  :"
           android:textColor="#0E0E0E"
           android:textSize="16sp"
@@ -176,7 +176,7 @@
 
       <TextView
           android:id="@+id/genderlabel"
-          android:layout_width="140dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginLeft="10dp"
           android:text="Gender  :"
@@ -184,10 +184,11 @@
           android:textSize="16sp"
           android:textStyle="bold" />
 
-      <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+      <RadioGroup
+          android:id="@+id/rg_gender"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:orientation="vertical">
+          android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/maleradio"
@@ -202,16 +203,58 @@
             android:text="Female" />
       </RadioGroup>
 
-      <TableRow
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/languagelabel"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginLeft="10dp"
-          android:layout_marginTop="15dp">
+          android:text="Languages : "
+          android:textColor="#0E0E0E"
+          android:textSize="16sp"
+          android:textStyle="bold" />
 
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
 
-      </TableRow>
+        <CheckBox
+            android:id="@+id/ch_malayalam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malayalam" />
 
+        <CheckBox
+            android:id="@+id/ch_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English" />
+
+        <CheckBox
+            android:id="@+id/ch_hindi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindi" />
+
+        <CheckBox
+            android:id="@+id/ch_tamil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamil" />
+
+      </LinearLayout>
     </TableRow>
+
 
     <TableRow
         android:layout_width="wrap_content"
@@ -244,8 +287,8 @@
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
 
@@ -282,13 +325,13 @@
       android:id="@+id/submit_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="138dp"
-      android:layout_marginTop="83dp"
+      android:layout_marginStart="128dp"
       android:layout_marginEnd="157dp"
       android:text="Submit"
       android:textSize="20sp"
       app:iconGravity="textEnd|textStart"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/tableLayout">
 
