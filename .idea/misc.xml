@@ -7,9 +7,11 @@
         <entry key="app/src/main/res/layout/activity_grid_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_grid_view_apps.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_implicit_intend.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_loginpage.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_registration_page.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_webview.xml" value="0.10520833333333333" />
       </map>
     </option>
   </component>

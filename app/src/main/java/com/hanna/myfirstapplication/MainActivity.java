@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                Intent intent=new Intent(getApplicationContext(),GridViewApps.class);
+                Intent intent=new Intent(getApplicationContext(),WebviewActivity.class);
                 startActivity(intent);
             }
         };

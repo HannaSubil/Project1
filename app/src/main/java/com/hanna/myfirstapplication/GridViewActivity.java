@@ -7,20 +7,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
-import com.hanna.myfirstapplication.R;
 
-class GridViewApps extends AppCompatActivity {
+public class GridViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grid_view_apps);
+        setContentView(R.layout.activity_grid_view);
         GridView apps = (GridView) findViewById(R.id.appsgrid);
         apps.setAdapter(new ImageAdapter(this));
         apps.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                Toast.makeText(GridViewApps.this,"Image Position"+position,Toast.LENGTH_SHORT).show();
+                Toast.makeText(GridViewActivity.this,"Image Position"+position,Toast.LENGTH_SHORT).show();
 
             }
         });
