@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplication">
         <activity
+            android:name=".GridViewApps"
+            android:exported="false" >
+
+        </activity>
+
+        <activity
             android:name=".RegistrationPage"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".HomePage"
             android:exported="false" />
         <activity
             android:name=".loginpage"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,6 +32,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

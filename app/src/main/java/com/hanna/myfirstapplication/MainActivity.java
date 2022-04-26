@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                Intent intent=new Intent(getApplicationContext(),loginpage.class);
+                Intent intent=new Intent(getApplicationContext(),GridViewApps.class);
                 startActivity(intent);
             }
         };
